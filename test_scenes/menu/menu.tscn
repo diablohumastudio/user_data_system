@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://1lj0rwr24hox"]
+
+[ext_resource type="Script" uid="uid://ct7q74vq1jmuc" path="res://test_scenes/menu/menu.gd" id="1_hai15"]
+[ext_resource type="PackedScene" uid="uid://bqc31a0j7x53h" path="res://test_scenes/menu/level_btn/level_btn.tscn" id="2_r2y2m"]
+[ext_resource type="Resource" uid="uid://b8e8b61sl263q" path="res://data/levels/data/level_3.tres" id="3_vjknv"]
+[ext_resource type="Resource" uid="uid://cqvlpdr7e7vql" path="res://data/levels/data/level_2.tres" id="4_vjknv"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hai15")
+
+[node name="LevelBtn" parent="." instance=ExtResource("2_r2y2m")]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 202.0
+offset_bottom = 417.0
+grow_horizontal = 1
+grow_vertical = 1
+text = "LVBT1"
+
+[node name="LevelBtn2" parent="." instance=ExtResource("2_r2y2m")]
+layout_mode = 1
+offset_left = 435.0
+offset_top = 202.0
+offset_right = 700.0
+offset_bottom = 406.0
+grow_horizontal = 1
+grow_vertical = 1
+text = "LVBT2"
+level = ExtResource("4_vjknv")
+
+[node name="LevelBtn3" parent="." instance=ExtResource("2_r2y2m")]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 194.0
+offset_right = 1018.0
+offset_bottom = 427.0
+grow_horizontal = 1
+grow_vertical = 1
+text = "LVBT3"
+level = ExtResource("3_vjknv")
+
+[node name="GotoAchivementListBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 713.0
+offset_right = 1032.0
+offset_bottom = 818.0
+theme_override_font_sizes/font_size = 45
+text = "Achivements list"
+
+[connection signal="pressed" from="GotoAchivementListBtn" to="." method="_on_goto_achivement_list_btn_pressed"]

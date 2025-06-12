@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CondAchieLvComp" load_steps=4 format=3 uid="uid://f57y2mu5v1y"]
+
+[ext_resource type="Script" uid="uid://cxwbrd3didcb" path="res://data/conditions/models/cond_achiev_lv_comp.gd" id="1_nk1lu"]
+[ext_resource type="Script" uid="uid://cgba5y4du6c5t" path="res://data/levels/models/level.gd" id="2_ewxhy"]
+[ext_resource type="Resource" uid="uid://cqvlpdr7e7vql" path="res://data/levels/data/level_2.tres" id="4_rgwrr"]
+
+[resource]
+script = ExtResource("1_nk1lu")
+necesary_levels = Array[ExtResource("2_ewxhy")]([ExtResource("4_rgwrr")])
+metadata/_custom_type_script = "uid://cxwbrd3didcb"

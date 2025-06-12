@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Level" load_steps=3 format=3 uid="uid://b8e8b61sl263q"]
+
+[ext_resource type="Script" uid="uid://cgba5y4du6c5t" path="res://data/levels/models/level.gd" id="1_hdrrp"]
+[ext_resource type="Resource" uid="uid://c6b0k605uumfl" path="res://data/level_progresses/data/level_progress_3.tres" id="1_rwc85"]
+
+[resource]
+script = ExtResource("1_hdrrp")
+level_name = "Level3"
+progress = ExtResource("1_rwc85")
+metadata/_custom_type_script = "uid://cgba5y4du6c5t"

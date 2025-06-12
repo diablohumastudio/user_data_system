@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=3 format=3 uid="uid://cye55dqxglgmj"]
+
+[ext_resource type="Resource" uid="uid://f57y2mu5v1y" path="res://data/conditions/data/cond_achiev_lv_comp_1.tres" id="1_5syix"]
+[ext_resource type="Script" uid="uid://d4mwvx8hvadc7" path="res://data/achivements/models/achievement.gd" id="1_6eprm"]
+
+[resource]
+script = ExtResource("1_6eprm")
+achievement_name = "sssss"
+description = ""
+xp_prize = 0
+condition = ExtResource("1_5syix")
+metadata/_custom_type_script = "uid://d4mwvx8hvadc7"

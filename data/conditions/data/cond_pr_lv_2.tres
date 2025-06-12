@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CondPr" load_steps=3 format=3 uid="uid://b3cga46qshn4o"]
+
+[ext_resource type="Script" uid="uid://bfs8h7rn7ielk" path="res://data/conditions/models/cond_pr.gd" id="1_3bhbt"]
+[ext_resource type="Script" uid="uid://cgba5y4du6c5t" path="res://data/levels/models/level.gd" id="1_l74ve"]
+
+[resource]
+script = ExtResource("1_3bhbt")
+necesary_levels = Array[ExtResource("1_l74ve")]([])
+metadata/_custom_type_script = "uid://bfs8h7rn7ielk"

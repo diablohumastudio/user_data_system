@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkhj8khihf3xb"]
+
+[ext_resource type="Script" uid="uid://c5bdpl88iwnid" path="res://test_scenes/achievements_list/achievements_list.gd" id="1_atehg"]
+[ext_resource type="PackedScene" uid="uid://b3k3vdpqxjmdv" path="res://test_scenes/achievements_list/achievement_presenter/achievement_presenter.tscn" id="2_8j8yb"]
+
+[node name="AchievementsList" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_atehg")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 203.0
+offset_right = 1389.0
+offset_bottom = 769.0
+
+[node name="AchivementsContainer" type="VBoxContainer" parent="CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AchievementPresenter" parent="CenterContainer/AchivementsContainer" instance=ExtResource("2_8j8yb")]
+layout_mode = 2
+
+[node name="GoBackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 233.0
+offset_top = 823.0
+offset_right = 427.0
+offset_bottom = 956.0
+theme_override_font_sizes/font_size = 50
+text = "GoBack"
+
+[connection signal="pressed" from="GoBackButton" to="." method="_on_go_back_button_pressed"]

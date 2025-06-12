@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqc31a0j7x53h"]
+
+[ext_resource type="Script" uid="uid://bhf2ijprkuc4s" path="res://test_scenes/menu/level_btn/level_btn.gd" id="1_2roh7"]
+
+[node name="LevelBtn" type="Button"]
+offset_right = 374.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "PLACEHOLDER"
+script = ExtResource("1_2roh7")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

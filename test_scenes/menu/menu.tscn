@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://1lj0rwr24hox"]
+[gd_scene load_steps=6 format=3 uid="uid://1lj0rwr24hox"]
 
 [ext_resource type="Script" uid="uid://ct7q74vq1jmuc" path="res://test_scenes/menu/menu.gd" id="1_hai15"]
 [ext_resource type="PackedScene" uid="uid://bqc31a0j7x53h" path="res://test_scenes/menu/level_btn/level_btn.tscn" id="2_r2y2m"]
-[ext_resource type="Resource" uid="uid://b8e8b61sl263q" path="res://data/levels/data/level_3.tres" id="3_vjknv"]
-[ext_resource type="Resource" uid="uid://cqvlpdr7e7vql" path="res://data/levels/data/level_2.tres" id="4_vjknv"]
+[ext_resource type="Resource" uid="uid://c2ns3msxewuqp" path="res://data/levels/data/lev_1.tres" id="3_vjknv"]
+[ext_resource type="Resource" uid="uid://gipfoyvnejku" path="res://data/levels/data/lev_2.tres" id="4_tx854"]
+[ext_resource type="Resource" uid="uid://b08muqpaeqa8m" path="res://data/levels/data/lev_3.tres" id="5_uc8n4"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -22,6 +23,7 @@ offset_bottom = 417.0
 grow_horizontal = 1
 grow_vertical = 1
 text = "LVBT1"
+level = ExtResource("3_vjknv")
 
 [node name="LevelBtn2" parent="." instance=ExtResource("2_r2y2m")]
 layout_mode = 1
@@ -32,7 +34,7 @@ offset_bottom = 406.0
 grow_horizontal = 1
 grow_vertical = 1
 text = "LVBT2"
-level = ExtResource("4_vjknv")
+level = ExtResource("4_tx854")
 
 [node name="LevelBtn3" parent="." instance=ExtResource("2_r2y2m")]
 layout_mode = 0
@@ -43,7 +45,7 @@ offset_bottom = 427.0
 grow_horizontal = 1
 grow_vertical = 1
 text = "LVBT3"
-level = ExtResource("3_vjknv")
+level = ExtResource("5_uc8n4")
 
 [node name="GotoAchivementListBtn" type="Button" parent="."]
 layout_mode = 0

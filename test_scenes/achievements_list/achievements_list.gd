@@ -10,7 +10,7 @@ func update_list():
 	for child in %AchivementsContainer.get_children():
 		child.queue_free()
 	for achiv in achievements:
-		if achiv._achieved:
+		if achiv.achieved:
 			var new_achivement_presenter: AchievementPresenter = load("uid://b3k3vdpqxjmdv").instantiate()
 			new_achivement_presenter.achievement = achiv
 			print(achiv, new_achivement_presenter.achievement)

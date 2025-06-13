@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ReduPr" load_steps=5 format=3 uid="uid://ctguu180eipvd"]
+
+[ext_resource type="Script" uid="uid://cy43xkkywsh4s" path="res://data/level_progresses/models/level_progress.gd" id="1_yphpu"]
+[ext_resource type="Script" uid="uid://bfs8h7rn7ielk" path="res://data/reducers/models/redu_pr.gd" id="2_bkk6d"]
+[ext_resource type="Resource" uid="uid://j4tqyes0p6gh" path="res://data/level_progresses/data/lev_pro_2.tres" id="2_g8rrc"]
+[ext_resource type="Resource" uid="uid://p7emk0qaq2hv" path="res://data/level_progresses/data/lev_pro_3.tres" id="4_5d644"]
+
+[resource]
+script = ExtResource("2_bkk6d")
+target = ExtResource("4_5d644")
+necesary_level_progresses = Array[ExtResource("1_yphpu")]([ExtResource("2_g8rrc")])
+metadata/_custom_type_script = "uid://bfs8h7rn7ielk"

@@ -1,7 +1,7 @@
 class_name UserAchievements extends Resource
 
-var ach_5_lv_won: Achievement = preload("res://data/achivements/data/new_ach.tres")
+var level_2_completed: Achievement = preload("uid://dbgo1erwjooin")
 
 @export var achievements: Array[Achievement] =[
-	ach_5_lv_won
+	level_2_completed
 ]

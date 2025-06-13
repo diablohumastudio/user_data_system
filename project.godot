@@ -18,4 +18,4 @@ config/icon="res://icon.svg"
 [autoload]
 
 SMS="*res://global_systems/scene_manager_system/system/scene_manager_system.gd"
-UDS="*res://user_data_system/user_data_system.gd"
+UDS="*res://global_systems/user_data_system/user_data_system.gd"

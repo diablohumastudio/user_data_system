@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Level" load_steps=3 format=3 uid="uid://b08muqpaeqa8m"]
+[gd_resource type="Resource" script_class="Level" load_steps=3 format=3 uid="uid://b1tdnkjda0a7g"]
 
-[ext_resource type="Script" uid="uid://cgba5y4du6c5t" path="res://data/levels/models/level.gd" id="1_hmasy"]
-[ext_resource type="Resource" uid="uid://p7emk0qaq2hv" path="res://data/level_progresses/data/lev_pro_3.tres" id="1_uwtih"]
+[ext_resource type="Script" uid="uid://bnfacqk3ehjpi" path="res://data/levels/models/level.gd" id="1_hmasy"]
+[ext_resource type="Resource" uid="uid://drrmmbu4lkbos" path="res://data/level_progresses/data/lev_pro_3.tres" id="1_uwtih"]
 
 [resource]
 script = ExtResource("1_hmasy")
 level_name = "Level3"
 progress = ExtResource("1_uwtih")
-metadata/_custom_type_script = "uid://cgba5y4du6c5t"
+metadata/_custom_type_script = "uid://bnfacqk3ehjpi"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3 uid="uid://bqoon11xihjdq"]
+
+[ext_resource type="Script" uid="uid://jm0we7itd8it" path="res://data/achievements/models/achievement.gd" id="1_dlg5h"]
+
+[resource]
+script = ExtResource("1_dlg5h")
+achievement_name = "Level 2 Completed"
+description = ""
+xp_prize = 50
+metadata/_custom_type_script = "uid://jm0we7itd8it"

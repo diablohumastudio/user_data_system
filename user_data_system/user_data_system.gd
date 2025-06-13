@@ -17,7 +17,6 @@ func _get_reducers() -> Array[Reducer]:
 		reds.append(resource)
 	return reds
 
-func on_level_completed(level: Level) -> void:
-	level.progress.state = LevelProgress.States.COMPLETED
-	for red in _reducers:
+func update_reducers():
+	for red in UDS._reducers:
 		red.evaluate()

@@ -6,8 +6,13 @@ func _ready() -> void:
 	%LevelLabel.text = level.level_name
 
 func _on_win_button_pressed() -> void:
-	UDS.on_level_completed(level)
+	level.progress.state = LevelProgress.States.COMPLETED
+	UDS.update_reducers()
 
 func _on_go_back_button_pressed() -> void:
-	var menu: Menu = load("uid://1lj0rwr24hox").instantiate()
+	var menu: Menu = load("uid://ptmhgyquqfrt").instantiate()
 	SMS.get_container("Main").goto_scene(menu)
+
+func _on_kill_enemy_button_pressed() -> void:
+	UDS.user_data.progress.total_enemies_death += 1
+	%DeathEnemiesLabel.text = str(UDS.user_data.progress.total_enemies_death)

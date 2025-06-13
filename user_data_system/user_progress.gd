@@ -1,13 +1,11 @@
 class_name UserProgress extends Resource
 
-#var level_1_progress: LevelProgress = preload("uid://jmjy1w3lg26l")
-#var level_2_progress: LevelProgress = preload("uid://j4tqyes0p6gh")
-#var level_3_progress: LevelProgress = preload("uid://p7emk0qaq2hv")
-
-@export_storage var level_progresses: Array[LevelProgress] #= [level_1_progress, level_2_progress, level_3_progress]
+@export_storage var level_progresses: Array[LevelProgress] 
+@export_storage var total_enemies_death: int = 0
 
 func _init() -> void:
 	level_progresses = _get_level_progresses_from_files()
+	print(level_progresses)
 
 func _get_level_progresses_from_files() -> Array[LevelProgress]:
 	var lv_prs: Array[LevelProgress]

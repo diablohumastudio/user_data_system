@@ -1,7 +1,17 @@
 class_name UserAchievements extends Resource
 
-var level_2_completed: Achievement = preload("uid://dbgo1erwjooin")
+@export var achievements: Array[Achievement] 
 
-@export var achievements: Array[Achievement] =[
-	level_2_completed
-]
+func _init() -> void:
+	achievements = _get_achievements_from_files()
+	print(achievements)
+
+func _get_achievements_from_files() -> Array[Achievement]:
+	var achs: Array[Achievement]
+	var dir := DirAccess.open("res://data/achievements/data/")
+	if dir == null: printerr("Could not open folder")
+	dir.list_dir_begin()
+	for file: String in dir.get_files():
+		var resource := load(dir.get_current_dir() + "/" + file)
+		achs.append(resource)
+	return achs

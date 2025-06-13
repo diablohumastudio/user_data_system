@@ -1,4 +1,4 @@
-class_name UserData extends Node
+class_name UserData extends Resource
 
 @export_storage var user_name: String
 @export_storage var inventory: UserAllyInventory = UserAllyInventory.new()

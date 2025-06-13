@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://1lj0rwr24hox"]
+[gd_scene load_steps=8 format=3 uid="uid://ptmhgyquqfrt"]
 
-[ext_resource type="Script" uid="uid://ct7q74vq1jmuc" path="res://test_scenes/menu/menu.gd" id="1_hai15"]
-[ext_resource type="PackedScene" uid="uid://bqc31a0j7x53h" path="res://test_scenes/menu/level_btn/level_btn.tscn" id="2_r2y2m"]
-[ext_resource type="Resource" uid="uid://c2ns3msxewuqp" path="res://data/levels/data/lev_1.tres" id="3_vjknv"]
-[ext_resource type="Resource" uid="uid://gipfoyvnejku" path="res://data/levels/data/lev_2.tres" id="4_tx854"]
-[ext_resource type="Resource" uid="uid://b08muqpaeqa8m" path="res://data/levels/data/lev_3.tres" id="5_uc8n4"]
+[ext_resource type="Script" uid="uid://cva4w1vpxotyw" path="res://test_scenes/menu/menu.gd" id="1_r2y2m"]
+[ext_resource type="PackedScene" uid="uid://ic48oe8q6leg" path="res://test_scenes/menu/level_btn/level_btn.tscn" id="2_o23fe"]
+[ext_resource type="Resource" uid="uid://bexhcn238tmid" path="res://data/levels/data/lev_1.tres" id="3_vjknv"]
+[ext_resource type="Resource" uid="uid://tllnfgmwlx23" path="res://data/levels/data/lev_2.tres" id="4_tx854"]
+[ext_resource type="Resource" uid="uid://b1tdnkjda0a7g" path="res://data/levels/data/lev_3.tres" id="5_uc8n4"]
+[ext_resource type="Resource" uid="uid://e6ud4py5bfkx" path="res://data/levels/data/lev_4.tres" id="6_uc8n4"]
+[ext_resource type="Resource" uid="uid://bnmhyk50l8lma" path="res://data/levels/data/lev_5.tres" id="7_bebfd"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -13,47 +15,65 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_hai15")
+script = ExtResource("1_r2y2m")
 
-[node name="LevelBtn" parent="." instance=ExtResource("2_r2y2m")]
+[node name="LevelBtn" parent="." instance=ExtResource("2_o23fe")]
 layout_mode = 0
-offset_left = 117.0
-offset_top = 202.0
-offset_bottom = 417.0
-grow_horizontal = 1
-grow_vertical = 1
-text = "LVBT1"
+offset_left = 146.0
+offset_top = 150.0
+offset_right = 315.0
+offset_bottom = 278.0
+theme_override_font_sizes/font_size = 40
+text = "1"
 level = ExtResource("3_vjknv")
 
-[node name="LevelBtn2" parent="." instance=ExtResource("2_r2y2m")]
-layout_mode = 1
-offset_left = 435.0
-offset_top = 202.0
-offset_right = 700.0
-offset_bottom = 406.0
-grow_horizontal = 1
-grow_vertical = 1
-text = "LVBT2"
+[node name="LevelBtn2" parent="." instance=ExtResource("2_o23fe")]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 146.0
+offset_right = 563.0
+offset_bottom = 274.0
+theme_override_font_sizes/font_size = 40
+text = "2"
 level = ExtResource("4_tx854")
 
-[node name="LevelBtn3" parent="." instance=ExtResource("2_r2y2m")]
+[node name="LevelBtn3" parent="." instance=ExtResource("2_o23fe")]
 layout_mode = 0
-offset_left = 752.0
-offset_top = 194.0
-offset_right = 1018.0
-offset_bottom = 427.0
-grow_horizontal = 1
-grow_vertical = 1
-text = "LVBT3"
+offset_left = 597.0
+offset_top = 147.0
+offset_right = 766.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 40
+text = "3"
 level = ExtResource("5_uc8n4")
 
-[node name="GotoAchivementListBtn" type="Button" parent="."]
+[node name="LevelBtn4" parent="." instance=ExtResource("2_o23fe")]
 layout_mode = 0
-offset_left = 733.0
-offset_top = 713.0
-offset_right = 1032.0
-offset_bottom = 818.0
-theme_override_font_sizes/font_size = 45
-text = "Achivements list"
+offset_left = 787.0
+offset_top = 149.0
+offset_right = 956.0
+offset_bottom = 277.0
+theme_override_font_sizes/font_size = 40
+text = "4"
+level = ExtResource("6_uc8n4")
 
-[connection signal="pressed" from="GotoAchivementListBtn" to="." method="_on_goto_achivement_list_btn_pressed"]
+[node name="LevelBtn5" parent="." instance=ExtResource("2_o23fe")]
+layout_mode = 0
+offset_left = 974.0
+offset_top = 149.0
+offset_right = 1143.0
+offset_bottom = 277.0
+theme_override_font_sizes/font_size = 40
+text = "5"
+level = ExtResource("7_bebfd")
+
+[node name="GotoAchievementListBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 457.0
+offset_right = 847.0
+offset_bottom = 533.0
+theme_override_font_sizes/font_size = 40
+text = "Goto Achievementes list"
+
+[connection signal="pressed" from="GotoAchievementListBtn" to="." method="_on_goto_achievement_list_btn_pressed"]

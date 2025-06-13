@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ReduAchievTotEnemKill" load_steps=3 format=3 uid="uid://botyd575wttcx"]
+
+[ext_resource type="Script" uid="uid://do086dcdhixxp" path="res://data/reducers/models/redu_achiev_tot_enem_kill.gd" id="1_afxbq"]
+[ext_resource type="Resource" uid="uid://da3mkvd2ahh2k" path="res://data/achievements/data/achi_tot_enem_count_5.tres" id="2_qtn6t"]
+
+[resource]
+script = ExtResource("1_afxbq")
+target = ExtResource("2_qtn6t")
+enemies_to_kill = 5
+metadata/_custom_type_script = "uid://do086dcdhixxp"

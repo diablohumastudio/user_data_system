@@ -14,5 +14,10 @@ func _ready() -> void:
 func _set_text() -> void:
 	if achievement:
 		%AchivementName.text = achievement.achievement_name
+		if achievement.achieved:
+			%AchievementAchieved.text = "Achieved"
+		else:
+			%AchievementAchieved.text = " NOT Achieved"
+			%AchievementAchieved["theme_override_colors/font_color"] = Color.RED
 	else:
 		%AchivementName.text = "placeholder_achievement"

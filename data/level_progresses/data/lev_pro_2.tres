@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="LevelProgress" load_steps=2 format=3 uid="uid://j4tqyes0p6gh"]
+[gd_resource type="Resource" script_class="LevelProgress" load_steps=2 format=3 uid="uid://divoecn2e3tss"]
 
-[ext_resource type="Script" uid="uid://cy43xkkywsh4s" path="res://data/level_progresses/models/level_progress.gd" id="1_5owf2"]
+[ext_resource type="Script" uid="uid://d1yxoekvbmm38" path="res://data/level_progresses/models/level_progress.gd" id="1_5owf2"]
 
 [resource]
 script = ExtResource("1_5owf2")
 state = 0
-metadata/_custom_type_script = "uid://cy43xkkywsh4s"
+metadata/_custom_type_script = "uid://d1yxoekvbmm38"

@@ -5,12 +5,11 @@ class_name UserProgress extends Resource
 
 func _init() -> void:
 	level_progresses = _get_level_progresses_from_files()
-	print(level_progresses)
 
 func _get_level_progresses_from_files() -> Array[LevelProgress]:
 	var lv_prs: Array[LevelProgress]
-	var dir := DirAccess.open("res://data/level_progresses/data/")
-	if dir == null: printerr("Could not open folder")
+	var dir := DirAccess.open("res://data/level_progiresses/data/")
+	assert(dir != null, "Could not open folder")
 	dir.list_dir_begin()
 	for file: String in dir.get_files():
 		var resource := load(dir.get_current_dir() + "/" + file)

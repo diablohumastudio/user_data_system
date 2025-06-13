@@ -10,7 +10,7 @@ func _ready() -> void:
 func _get_reducers() -> Array[Reducer]:
 	var reds: Array[Reducer]
 	var dir := DirAccess.open("res://data/reducers/data/")
-	if dir == null: printerr("Could not open folder")
+	assert(dir != null, "Could not open folder")
 	dir.list_dir_begin()
 	for file: String in dir.get_files():
 		var resource := load(dir.get_current_dir() + "/" + file)

@@ -2,7 +2,7 @@ class_name LevelBtn extends Button
 
 @export var level: Level 
 
-var game: Game = load("uid://k0dtqul2l4om").instantiate()
+var game: Game = load(GC.SCREENS_UIDS.GAME).instantiate()
 
 func _ready() -> void:
 	set_disabled_mode()

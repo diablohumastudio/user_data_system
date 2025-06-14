@@ -10,7 +10,7 @@ func _on_win_button_pressed() -> void:
 	UDS.update_reducers()
 
 func _on_go_back_button_pressed() -> void:
-	var menu: Menu = load("uid://ptmhgyquqfrt").instantiate()
+	var menu: Menu = load(GC.SCREENS_UIDS.MENU).instantiate()
 	SMS.get_container("Main").goto_scene(menu)
 
 func _on_kill_enemy_button_pressed() -> void:

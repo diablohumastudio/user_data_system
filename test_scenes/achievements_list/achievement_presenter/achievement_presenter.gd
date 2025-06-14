@@ -12,12 +12,14 @@ func _ready() -> void:
 	_set_text()
 
 func _set_text() -> void:
-	if achievement:
-		%AchivementName.text = achievement.achievement_name
-		if achievement.achieved:
-			%AchievementAchieved.text = "Achieved"
-		else:
-			%AchievementAchieved.text = " NOT Achieved"
-			%AchievementAchieved["theme_override_colors/font_color"] = Color.RED
+	if !achievement: return
+
+	%AchivementName.text = achievement.achievement_name
+	
+	if achievement._achieved:
+		%AchievementAchieved.text = "Achieved"
 	else:
-		%AchivementName.text = "placeholder_achievement"
+		%AchievementAchieved.text = " NOT Achieved"
+		%AchievementAchieved["theme_override_colors/font_color"] = Color.RED
+	
+	%Porcentage.text = str(achievement.porcentage_advanced) + "%"

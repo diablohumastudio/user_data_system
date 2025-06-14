@@ -1,22 +1,25 @@
 extends Node
 
+signal set_action()
+
 var user_data: UserData = UserData.new()
 
-var _reducers: Array[Reducer] = []
+var _conditions: Array[Condition] = []
 
 func _ready() -> void:
-	_reducers = _get_reducers()
+	pass
+	_conditions = _get_conditions()
 
-func _get_reducers() -> Array[Reducer]:
-	var reds: Array[Reducer]
-	var dir := DirAccess.open("res://data/reducers/data/")
+func _get_conditions() -> Array[Condition]:
+	var conds: Array[Condition]
+	var dir := DirAccess.open("res://data/conditions/data/")
 	assert(dir != null, "Could not open folder")
 	dir.list_dir_begin()
 	for file: String in dir.get_files():
 		var resource := load(dir.get_current_dir() + "/" + file)
-		reds.append(resource)
-	return reds
+		conds.append(resource)
+	return conds
 
-func update_reducers():
-	for red in UDS._reducers:
+func update_conditions():
+	for red in _conditions:
 		red.evaluate()

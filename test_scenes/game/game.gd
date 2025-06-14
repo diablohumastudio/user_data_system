@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func _on_win_button_pressed() -> void:
 	level.progress.state = LevelProgress.States.COMPLETED
-	UDS.update_reducers()
+	UDS.update_conditions()
 
 func _on_go_back_button_pressed() -> void:
 	var menu: Menu = load(GC.SCREENS_UIDS.MENU).instantiate()
@@ -16,3 +16,4 @@ func _on_go_back_button_pressed() -> void:
 func _on_kill_enemy_button_pressed() -> void:
 	UDS.user_data.progress.total_enemies_death += 1
 	%DeathEnemiesLabel.text = str(UDS.user_data.progress.total_enemies_death)
+	UDS.update_conditions()

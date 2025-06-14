@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CondLvCompleted" load_steps=3 format=3 uid="uid://ckcp6ibxa3o05"]
+
+[ext_resource type="Resource" uid="uid://bexhcn238tmid" path="res://data/levels/data/lev_1.tres" id="1_d4a4j"]
+[ext_resource type="Script" uid="uid://b2p4erl6k1qxw" path="res://data/conditions/models/cond_lv_completed.gd" id="1_hi7q4"]
+
+[resource]
+script = ExtResource("1_hi7q4")
+level = ExtResource("1_d4a4j")
+metadata/_custom_type_script = "uid://b2p4erl6k1qxw"

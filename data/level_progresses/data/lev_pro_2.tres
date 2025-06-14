@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="LevelProgress" load_steps=2 format=3 uid="uid://divoecn2e3tss"]
+[gd_resource type="Resource" script_class="LevelProgress" load_steps=3 format=3 uid="uid://divoecn2e3tss"]
 
 [ext_resource type="Script" uid="uid://d1yxoekvbmm38" path="res://data/level_progresses/models/level_progress.gd" id="1_5owf2"]
+[ext_resource type="Resource" uid="uid://ckcp6ibxa3o05" path="res://data/conditions/data/cond_lv_compl_1.tres" id="2_3ql2b"]
 
 [resource]
 script = ExtResource("1_5owf2")
 state = 0
+unlock_condition = ExtResource("2_3ql2b")
 metadata/_custom_type_script = "uid://d1yxoekvbmm38"

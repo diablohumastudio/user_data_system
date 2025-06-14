@@ -4,7 +4,6 @@ class_name AchievementsList extends Control
 
 func _ready() -> void:
 	achievements = UDS.user_data.achievements.achievements
-	UDS.update_reducers()
 	update_list()
 
 func update_list():

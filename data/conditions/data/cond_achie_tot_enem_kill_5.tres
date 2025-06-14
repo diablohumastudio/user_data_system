@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CondAchieTotEnemKill" load_steps=2 format=3 uid="uid://bchxxcnkqmbqx"]
 
-[ext_resource type="Script" uid="uid://do086dcdhixxp" path="res://data/conditions/models/cond_achie_tot_enem_kill.gd" id="1_d30r1"]
+[ext_resource type="Script" uid="uid://do086dcdhixxp" path="res://data/conditions/models/cond_tot_enem_kill.gd" id="1_d30r1"]
 
 [resource]
 script = ExtResource("1_d30r1")

@@ -1,6 +1,9 @@
-class_name CondAchieTotEnemKill extends Condition
+class_name CondTotEnemKill extends Condition
 
 @export var enemies_to_kill: int
+
+func _init() -> void:
+	type = Types.ENEMY_KILLED
 
 func evaluate() -> void:
 	var enemies_killed: int = UDS.user_data.progress.total_enemies_death

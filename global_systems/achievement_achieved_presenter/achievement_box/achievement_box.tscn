@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbuhdd83agqmv"]
+
+[ext_resource type="Script" uid="uid://digvovwo3tgs2" path="res://global_systems/achievement_achieved_presenter/achievement_box/achievement_box.gd" id="1_cx363"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7sxa"]
+bg_color = Color(0.278431, 0.870588, 0.866667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yyh8u"]
+bg_color = Color(0.278431, 0.121569, 0.866667, 1)
+
+[node name="AchievementBox" type="VBoxContainer"]
+offset_right = 323.0
+offset_bottom = 74.0
+script = ExtResource("1_cx363")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7sxa")
+text = "Achievement Unlocked: "
+
+[node name="AchievementName" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_yyh8u")
+text = "The best achievement ever"

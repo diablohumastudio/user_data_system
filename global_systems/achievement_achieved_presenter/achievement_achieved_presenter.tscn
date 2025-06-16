@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdaba6jfun2ce"]
+
+[ext_resource type="Script" uid="uid://blaj7c37fdoch" path="res://global_systems/achievement_achieved_presenter/achievement_achieved_presenter.gd" id="1_yyh8u"]
+[ext_resource type="PackedScene" uid="uid://cbuhdd83agqmv" path="res://global_systems/achievement_achieved_presenter/achievement_box/achievement_box.tscn" id="2_25rir"]
+
+[node name="AchievementAchievedPresenter" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yyh8u")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -407.0
+offset_bottom = 102.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="AchievementBox" parent="MarginContainer/HBoxContainer" instance=ExtResource("2_25rir")]
+layout_mode = 2
+
+[node name="AchievementBox2" parent="MarginContainer/HBoxContainer" instance=ExtResource("2_25rir")]
+layout_mode = 2

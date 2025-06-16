@@ -1,5 +1,7 @@
 class_name Achievement extends Resource
 
+signal achieved(achievement: Achievement)
+
 @export var achievement_name: String
 @export var description: String
 @export var xp_prize: int
@@ -33,3 +35,10 @@ func _verify_achieved() -> void:
 		if !condition.is_fullfilled:
 			return
 	_achieved = true
+	achieved.emit(self)
+	_disconect_conditions_signals()
+
+func _disconect_conditions_signals() -> void:
+	for condition in conditions:
+		if condition:
+			condition.fullfilled.disconnect(_on_condition_fullfilled)

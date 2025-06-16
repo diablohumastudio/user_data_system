@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Ally" load_steps=2 format=3 uid="uid://b5fxt5cql1k2f"]
+
+[ext_resource type="Script" uid="uid://n5ueenbpmbqv" path="res://data/allies/models/ally.gd" id="1_yd7cl"]
+
+[resource]
+script = ExtResource("1_yd7cl")
+ally_name = "Ally2"
+price = 80
+hp = 75
+metadata/_custom_type_script = "uid://n5ueenbpmbqv"

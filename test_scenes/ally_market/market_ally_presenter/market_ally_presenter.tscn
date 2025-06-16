@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwnts0gje8jcg"]
+
+[ext_resource type="Script" uid="uid://cvmcixl1n1isx" path="res://test_scenes/ally_market/market_ally_presenter/market_ally_presenter.gd" id="1_83avg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jio78"]
+bg_color = Color(0.184314, 0.6, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thipp"]
+bg_color = Color(0.938436, 0.355633, 0.632056, 1)
+
+[node name="MarketAllyPresenter" type="VBoxContainer"]
+script = ExtResource("1_83avg")
+
+[node name="AllyName" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_jio78")
+text = "Osito"
+
+[node name="AllyPrice" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_thipp")
+text = "40"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BUY"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

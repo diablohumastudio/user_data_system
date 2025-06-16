@@ -2,6 +2,7 @@ class_name UserProgress extends Resource
 
 @export_storage var level_progresses: Array[LevelProgress] 
 @export_storage var total_enemies_death: int = 0
+@export_storage var external_coins: int = 0
 
 func _init() -> void:
 	pass

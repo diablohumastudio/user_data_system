@@ -9,6 +9,6 @@
 script = ExtResource("4_cf0w6")
 achievement_name = "Level 3 and 5 Completed"
 description = ""
-xp_prize = 50
+xp_prize = 100
 conditions = Array[ExtResource("1_sddrx")]([ExtResource("2_48jwp"), ExtResource("3_l85tm")])
 metadata/_custom_type_script = "uid://jm0we7itd8it"

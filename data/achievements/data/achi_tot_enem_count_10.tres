@@ -9,6 +9,6 @@
 script = ExtResource("1_3inr1")
 achievement_name = "10 Killed!!!!"
 description = ""
-xp_prize = 0
+xp_prize = 60
 conditions = Array[ExtResource("1_55l8g")]([ExtResource("2_v45d0"), ExtResource("1_v6caw")])
 metadata/_custom_type_script = "uid://jm0we7itd8it"

@@ -24,11 +24,11 @@ func _on_condition_fullfilled() -> void:
 
 func _update_porcentage() -> void:
 	var total_conditions: float = conditions.size()
-	var fullfilled_conditions: float
+	var fullfilled_conditions: float = 0
 	for condition in conditions:
 		if condition.is_fullfilled:
 			fullfilled_conditions += 1
-	porcentage_advanced = 100 * (fullfilled_conditions / total_conditions)
+	porcentage_advanced = 100 * int(fullfilled_conditions / total_conditions)
 
 func _verify_achieved() -> void:
 	for condition in conditions:

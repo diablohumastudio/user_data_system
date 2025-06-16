@@ -3,7 +3,6 @@ class_name UserAchievements extends Resource
 @export var achievements: Array[Achievement] 
 
 func _init() -> void:
-	pass
 	achievements = _get_achievements_from_files()
 
 func _get_achievements_from_files() -> Array[Achievement]:

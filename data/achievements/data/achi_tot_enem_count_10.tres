@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://jm0we7itd8it" path="res://data/achievements/models/achievement.gd" id="1_3inr1"]
 [ext_resource type="Script" uid="uid://dc1gsvvpa7olb" path="res://data/conditions/models/condition.gd" id="1_55l8g"]
-[ext_resource type="Resource" uid="uid://c5ua67trd4p34" path="res://data/conditions/data/cond_achie_tot_enem_kill_10.tres" id="1_v6caw"]
-[ext_resource type="Resource" uid="uid://bchxxcnkqmbqx" path="res://data/conditions/data/cond_achie_tot_enem_kill_5.tres" id="2_v45d0"]
+[ext_resource type="Resource" uid="uid://c5ua67trd4p34" path="res://data/conditions/data/cond_tot_enem_kill_10.tres" id="1_v6caw"]
+[ext_resource type="Resource" uid="uid://bchxxcnkqmbqx" path="res://data/conditions/data/cond_tot_enem_kill_5.tres" id="2_v45d0"]
 
 [resource]
 script = ExtResource("1_3inr1")

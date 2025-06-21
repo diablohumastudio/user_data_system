@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Achievement" load_steps=5 format=3 uid="uid://bqoon11xihjdq"]
 
 [ext_resource type="Script" uid="uid://dc1gsvvpa7olb" path="res://data/conditions/models/condition.gd" id="1_sddrx"]
-[ext_resource type="Resource" uid="uid://dgbphd2t3sc62" path="res://data/conditions/data/cond_lv_compl_3.tres" id="2_48jwp"]
-[ext_resource type="Resource" uid="uid://e0ot3qyf4jdu" path="res://data/conditions/data/cond_lv_compl_5.tres" id="3_l85tm"]
+[ext_resource type="Resource" uid="uid://dgbphd2t3sc62" path="res://data/conditions/data/cond_lv_compl_3.tres" id="2_sddrx"]
+[ext_resource type="Resource" uid="uid://e0ot3qyf4jdu" path="res://data/conditions/data/cond_lv_compl_5.tres" id="3_48jwp"]
 [ext_resource type="Script" uid="uid://jm0we7itd8it" path="res://data/achievements/models/achievement.gd" id="4_cf0w6"]
 
 [resource]
@@ -10,5 +10,7 @@ script = ExtResource("4_cf0w6")
 achievement_name = "Level 3 and 5 Completed"
 description = ""
 xp_prize = 100
-conditions = Array[ExtResource("1_sddrx")]([ExtResource("2_48jwp"), ExtResource("3_l85tm")])
+conditions = Array[ExtResource("1_sddrx")]([ExtResource("2_sddrx"), ExtResource("3_48jwp")])
+porcentage_advanced = 0
+is_achieved = false
 metadata/_custom_type_script = "uid://jm0we7itd8it"

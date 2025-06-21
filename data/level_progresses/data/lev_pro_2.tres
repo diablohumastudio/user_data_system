@@ -1,10 +1,14 @@
-[gd_resource type="Resource" script_class="LevelProgress" load_steps=3 format=3 uid="uid://divoecn2e3tss"]
+[gd_resource type="Resource" script_class="LevelProgress" load_steps=5 format=3 uid="uid://divoecn2e3tss"]
 
 [ext_resource type="Script" uid="uid://d1yxoekvbmm38" path="res://data/level_progresses/models/level_progress.gd" id="1_5owf2"]
+[ext_resource type="Resource" uid="uid://bwsehkbqhu2n6" path="res://data/conditions/data/cond_lv_compl_2.tres" id="1_w1o4l"]
 [ext_resource type="Resource" uid="uid://ckcp6ibxa3o05" path="res://data/conditions/data/cond_lv_compl_1.tres" id="2_3ql2b"]
+[ext_resource type="Script" uid="uid://b2p4erl6k1qxw" path="res://data/conditions/models/cond_lv_completed.gd" id="3_dicfb"]
 
 [resource]
 script = ExtResource("1_5owf2")
 state = 0
-unlock_condition = ExtResource("2_3ql2b")
+unlock_conditions = Array[ExtResource("3_dicfb")]([ExtResource("2_3ql2b")])
+complete_condition = ExtResource("1_w1o4l")
+id = "lv_pro_w_1_lv_2"
 metadata/_custom_type_script = "uid://d1yxoekvbmm38"

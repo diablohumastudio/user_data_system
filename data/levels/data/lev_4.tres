@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("1_50l88")
+id = 3
 level_name = "LV4"
 progress = ExtResource("1_pqc6a")
 metadata/_custom_type_script = "uid://bnfacqk3ehjpi"

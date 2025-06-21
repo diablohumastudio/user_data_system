@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://jm0we7itd8it" path="res://data/achievements/models/achievement.gd" id="1_kl44u"]
 [ext_resource type="Script" uid="uid://dc1gsvvpa7olb" path="res://data/conditions/models/condition.gd" id="1_punby"]
-[ext_resource type="Resource" uid="uid://bchxxcnkqmbqx" path="res://data/conditions/data/cond_achie_tot_enem_kill_5.tres" id="2_1s5lh"]
+[ext_resource type="Resource" uid="uid://bchxxcnkqmbqx" path="res://data/conditions/data/cond_tot_enem_kill_5.tres" id="2_1s5lh"]
 
 [resource]
 script = ExtResource("1_kl44u")
@@ -10,4 +10,6 @@ achievement_name = "Kill 5 "
 description = ""
 xp_prize = 30
 conditions = Array[ExtResource("1_punby")]([ExtResource("2_1s5lh")])
+porcentage_advanced = 0
+is_achieved = false
 metadata/_custom_type_script = "uid://jm0we7itd8it"

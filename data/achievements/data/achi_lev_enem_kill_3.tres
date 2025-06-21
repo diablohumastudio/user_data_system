@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=4 format=3 uid="uid://kfqea6hi1ahi"]
+
+[ext_resource type="Script" uid="uid://dc1gsvvpa7olb" path="res://data/conditions/models/condition.gd" id="1_x5ri7"]
+[ext_resource type="Script" uid="uid://jm0we7itd8it" path="res://data/achievements/models/achievement.gd" id="2_1bli5"]
+[ext_resource type="Resource" uid="uid://d1dybiyrdrdyi" path="res://data/conditions/data/cond_lv_enem_kill_3.tres" id="2_hmkud"]
+
+[resource]
+script = ExtResource("2_1bli5")
+achievement_name = "3 kill in level"
+description = ""
+xp_prize = 10
+conditions = Array[ExtResource("1_x5ri7")]([ExtResource("2_hmkud")])
+porcentage_advanced = 0
+is_achieved = false
+metadata/_custom_type_script = "uid://jm0we7itd8it"

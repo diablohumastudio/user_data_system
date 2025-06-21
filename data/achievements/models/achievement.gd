@@ -8,8 +8,8 @@ signal achieved(achievement: Achievement)
 
 @export var conditions: Array[Condition] : set = _set_condition
 
-var porcentage_advanced: int = 0
-var _achieved: bool = false
+@export_storage var porcentage_advanced: int = 0
+@export_storage var is_achieved: bool = false
 
 func _set_condition(new_value:Array[Condition]) -> void:
 	assert(new_value != null, "Condition MUST not be null in an Achievement.")
@@ -28,13 +28,13 @@ func _update_porcentage() -> void:
 	for condition in conditions:
 		if condition.is_fullfilled:
 			fullfilled_conditions += 1
-	porcentage_advanced = 100 * int(fullfilled_conditions / total_conditions)
+	porcentage_advanced = int(100 * (fullfilled_conditions / total_conditions))
 
 func _verify_achieved() -> void:
 	for condition in conditions:
 		if !condition.is_fullfilled:
 			return
-	_achieved = true
+	is_achieved = true
 	achieved.emit(self)
 	_disconect_conditions_signals()
 

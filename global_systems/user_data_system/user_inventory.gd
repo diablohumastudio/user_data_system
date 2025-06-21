@@ -1,9 +1,6 @@
-class_name UserAllyInventory extends Node
+class_name UserAllyInventory extends Resource
 
-@export var allies_inventory: Array[Ally]
-
-func _init() -> void:
-	allies_inventory = _get_allies_from_files()
+@export_storage var allies_inventory: Array[Ally] = _get_allies_from_files()
 
 func _get_allies_from_files() -> Array[Ally]:
 	var allies: Array[Ally]
@@ -12,5 +9,5 @@ func _get_allies_from_files() -> Array[Ally]:
 	dir.list_dir_begin()
 	for file: String in dir.get_files():
 		var resource := load(dir.get_current_dir() + "/" + file)
-		allies.append(resource)
+		allies.append(resource.duplicate())
 	return allies

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CondLevEnemKill" load_steps=2 format=3 uid="uid://d1dybiyrdrdyi"]
+
+[ext_resource type="Script" uid="uid://cf1vm35ebsn87" path="res://data/conditions/models/cond_lev_enem_kill.gd" id="1_pbafh"]
+
+[resource]
+script = ExtResource("1_pbafh")
+enemies_to_kill = 3
+is_fullfilled = false
+metadata/_custom_type_script = "uid://cf1vm35ebsn87"

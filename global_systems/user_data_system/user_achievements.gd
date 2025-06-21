@@ -1,9 +1,6 @@
 class_name UserAchievements extends Resource
 
-@export var achievements: Array[Achievement] 
-
-func _init() -> void:
-	achievements = _get_achievements_from_files()
+@export_storage var achievements: Array[Achievement] = _get_achievements_from_files()
 
 func _get_achievements_from_files() -> Array[Achievement]:
 	var achs: Array[Achievement]
@@ -11,6 +8,7 @@ func _get_achievements_from_files() -> Array[Achievement]:
 	assert(dir != null, "Could not open folder")
 	dir.list_dir_begin()
 	for file: String in dir.get_files():
-		var resource := load(dir.get_current_dir() + "/" + file)
-		achs.append(resource)
+		var achievement : Achievement = load(dir.get_current_dir() + "/" + file)
+		var achi_dupl: Achievement = achievement.duplicate()
+		achs.append(achi_dupl)
 	return achs

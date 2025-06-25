@@ -13,6 +13,6 @@ func _get_level_progresses_from_files() -> Array[LevelProgress]:
 	for file: String in dir.get_files():
 		var complete_path: String = dir.get_current_dir() + "/" + file
 		var level_progress : LevelProgress = load(complete_path)
-		var lv_pr_dupl: LevelProgress = level_progress.duplicate()
+		var lv_pr_dupl: LevelProgress = level_progress.duplicate(true)
 		lv_prs.append(lv_pr_dupl)
 	return lv_prs

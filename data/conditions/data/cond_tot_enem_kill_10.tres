@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="CondAchieTotEnemKill" load_steps=2 format=3 uid="uid://c5ua67trd4p34"]
+[gd_resource type="Resource" script_class="CondTotEnemKill" load_steps=2 format=3 uid="uid://c5ua67trd4p34"]
 
 [ext_resource type="Script" uid="uid://do086dcdhixxp" path="res://data/conditions/models/cond_tot_enem_kill.gd" id="1_vle0j"]
 
 [resource]
 script = ExtResource("1_vle0j")
 enemies_to_kill = 10
+is_fullfilled = false
+id = "cond_tot_enem_kill_10"
 metadata/_custom_type_script = "uid://do086dcdhixxp"

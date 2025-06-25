@@ -8,4 +8,4 @@ func _init() -> void:
 func evaluate(_payload: Payload) -> void:
 	var level : Level = load(level_path)
 	if level.progress.state == LevelProgress.States.COMPLETED:
-		is_fullfilled = true
+		if !is_fullfilled: is_fullfilled = true

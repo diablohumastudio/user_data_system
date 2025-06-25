@@ -4,4 +4,7 @@
 
 [resource]
 script = ExtResource("1_81cxt")
+level_path = ""
+is_fullfilled = false
+id = "cond_true"
 metadata/_custom_type_script = "uid://d4kgv43fwb2nv"

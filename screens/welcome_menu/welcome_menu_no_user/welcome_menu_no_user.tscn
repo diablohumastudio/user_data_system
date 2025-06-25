@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxxmq32l3eqdc"]
+
+[ext_resource type="PackedScene" uid="uid://5mi2thhyfu2w" path="res://screens/welcome_menu/welcome_menu.tscn" id="1_l0su1"]
+
+[node name="WelcomeMenuNoUser" instance=ExtResource("1_l0su1")]
+
+[node name="WelcomeLabel" parent="." index="0"]
+offset_left = 730.0
+offset_top = 148.0
+offset_right = 930.0
+offset_bottom = 211.0
+scale = Vector2(1, 1)
+theme_override_font_sizes/font_size = 65
+text = "Welcome"
+
+[node name="ChangeUserBtn" parent="." index="1"]
+visible = false
+
+[node name="GotoPopUpBtns" parent="." index="2"]
+offset_left = 705.0
+offset_top = 526.0
+offset_right = 762.0
+offset_bottom = 566.0
+scale = Vector2(1, 1)
+
+[node name="GotoLoginBtn" parent="GotoPopUpBtns" index="0"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 100.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 65
+
+[node name="GotoRegisterBtn" parent="GotoPopUpBtns" index="1"]
+offset_left = 238.0
+offset_top = -2.00001
+offset_right = 502.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 65
+
+[node name="GotoMenuBtn" parent="." index="3"]
+visible = false

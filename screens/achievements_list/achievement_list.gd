@@ -3,7 +3,7 @@ class_name AchievementsList extends Control
 @export var achievements: Array[Achievement]
 
 func _ready() -> void:
-	achievements = UDS.user_data.achievements.achievements
+	achievements = UDS.get_property(UDS.PROPERTIES.ACHIEVEMENTS)
 	update_list()
 
 func update_list():

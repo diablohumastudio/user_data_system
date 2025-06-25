@@ -5,7 +5,7 @@ class_name AlliesMarket extends Control
 func _ready() -> void:
 	for child in %HBoxContainer.get_children():
 		child.queue_free()
-	for ally in UDS.user_data.allies_inventory.allies_inventory:
+	for ally in UDS.get_property(UDS.PROPERTIES.ALLIES_INVENTORY):
 		var new_ally_presenter: MarketAllyPresenter = ally_presenter_pksc.instantiate()
 		new_ally_presenter.ally_name = ally.ally_name
 		new_ally_presenter.ally_price = ally.price

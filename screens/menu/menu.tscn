@@ -22,82 +22,99 @@ script = ExtResource("1_r2y2m")
 [node name="UserPresenter" parent="." instance=ExtResource("8_bebfd")]
 layout_mode = 1
 
-[node name="LevelBtn" parent="." instance=ExtResource("2_o23fe")]
+[node name="MusicVolumeLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 500.0
+offset_top = 48.0
+offset_right = 603.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 60
+text = "100"
+
+[node name="LevelBtns" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 311.0
+offset_top = 131.0
+offset_right = 351.0
+offset_bottom = 171.0
+
+[node name="LevelBtn" parent="LevelBtns" instance=ExtResource("2_o23fe")]
 layout_mode = 0
 offset_left = 83.0
 offset_top = 246.0
 offset_right = 252.0
 offset_bottom = 374.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 60
 text = "1"
 level = ExtResource("3_vjknv")
 
-[node name="LevelBtn2" parent="." instance=ExtResource("2_o23fe")]
+[node name="LevelBtn2" parent="LevelBtns" instance=ExtResource("2_o23fe")]
 layout_mode = 0
 offset_left = 307.0
 offset_top = 157.0
 offset_right = 476.0
 offset_bottom = 285.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 60
 text = "2"
 level = ExtResource("4_tx854")
 
-[node name="LevelBtn2_2" parent="." instance=ExtResource("2_o23fe")]
+[node name="LevelBtn2_2" parent="LevelBtns" instance=ExtResource("2_o23fe")]
 layout_mode = 0
 offset_left = 309.0
 offset_top = 307.0
 offset_right = 478.0
 offset_bottom = 435.0
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 60
 text = "2'"
 level = ExtResource("6_e6wkj")
 
-[node name="LevelBtn3" parent="." instance=ExtResource("2_o23fe")]
+[node name="LevelBtn3" parent="LevelBtns" instance=ExtResource("2_o23fe")]
 layout_mode = 0
 offset_left = 530.0
 offset_top = 265.0
 offset_right = 699.0
 offset_bottom = 393.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 60
 text = "3"
 level = ExtResource("5_uc8n4")
 
-[node name="LevelBtn4" parent="." instance=ExtResource("2_o23fe")]
+[node name="LevelBtn4" parent="LevelBtns" instance=ExtResource("2_o23fe")]
 layout_mode = 0
 offset_left = 741.0
 offset_top = 269.0
 offset_right = 910.0
 offset_bottom = 397.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 60
 text = "4"
 level = ExtResource("6_uc8n4")
 
-[node name="LevelBtn5" parent="." instance=ExtResource("2_o23fe")]
+[node name="LevelBtn5" parent="LevelBtns" instance=ExtResource("2_o23fe")]
 layout_mode = 0
 offset_left = 928.0
 offset_top = 269.0
 offset_right = 1097.0
 offset_bottom = 397.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 60
 text = "5"
 level = ExtResource("7_bebfd")
 
 [node name="GotoAchievementListBtn" type="Button" parent="."]
 layout_mode = 0
-offset_left = 323.0
-offset_top = 457.0
-offset_right = 847.0
-offset_bottom = 533.0
-theme_override_font_sizes/font_size = 40
+offset_left = 514.0
+offset_top = 634.0
+offset_right = 1222.0
+offset_bottom = 725.0
+theme_override_font_sizes/font_size = 60
 text = "Goto Achievementes list"
 
 [node name="GotoMarketBtn" type="Button" parent="."]
 layout_mode = 0
-offset_left = 421.0
-offset_top = 550.0
-offset_right = 772.0
-offset_bottom = 617.0
-theme_override_font_sizes/font_size = 40
+offset_left = 655.0
+offset_top = 778.0
+offset_right = 1006.0
+offset_bottom = 869.0
+theme_override_font_sizes/font_size = 60
 text = "MARKET"
 
 [node name="SaveBtn" type="Button" parent="."]
@@ -106,19 +123,19 @@ offset_left = 840.0
 offset_top = 51.0
 offset_right = 953.0
 offset_bottom = 127.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 60
 text = "SAVE"
 
-[node name="MusicVolumeLabel" type="Label" parent="."]
-unique_name_in_owner = true
+[node name="GoBackBtn" type="Button" parent="."]
 layout_mode = 0
-offset_left = 343.0
-offset_top = 79.0
-offset_right = 426.0
-offset_bottom = 128.0
-theme_override_font_sizes/font_size = 45
-text = "100"
+offset_left = 91.0
+offset_top = 930.0
+offset_right = 314.0
+offset_bottom = 1014.0
+theme_override_font_sizes/font_size = 55
+text = "Go Back"
 
 [connection signal="pressed" from="GotoAchievementListBtn" to="." method="_on_goto_achievement_list_btn_pressed"]
 [connection signal="pressed" from="GotoMarketBtn" to="." method="_on_goto_market_btn_pressed"]
 [connection signal="pressed" from="SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="GoBackBtn" to="." method="_on_go_back_btn_pressed"]

@@ -22,3 +22,11 @@ UDS="*res://global_systems/user_data_system/user_data_system.gd"
 GC="*res://global_systems/global_constants/global_constants.gd"
 ACS="*res://global_systems/actions_conditions_system/actions_conditions_system.gd"
 AAPresenter="*res://global_systems/achievement_achieved_presenter/achievement_achieved_presenter.tscn"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=640
+window/size/window_height_override=360
+window/stretch/mode="canvas_items"

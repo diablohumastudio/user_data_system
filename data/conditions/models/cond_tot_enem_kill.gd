@@ -6,6 +6,6 @@ func _init() -> void:
 	type = Types.ENEMY_KILLED
 
 func evaluate(_payload: Payload) -> void:
-	var enemies_killed: int = UDS.user_data.progress.total_enemies_death
+	var enemies_killed: int = UDS.get_property(UDS.PROPERTIES.TOT_ENEM_DEATHS)
 	if enemies_killed >= enemies_to_kill :
-		is_fullfilled = true
+		if !is_fullfilled: is_fullfilled = true

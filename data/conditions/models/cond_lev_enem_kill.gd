@@ -8,5 +8,4 @@ func _init() -> void:
 func evaluate(payload: Payload) -> void:
 	var enemies_killed: int = (payload as PayLevEnemKill).enemies_killed
 	if enemies_killed >= enemies_to_kill :
-		is_fullfilled = true
-	pass
+		if !is_fullfilled: is_fullfilled = true

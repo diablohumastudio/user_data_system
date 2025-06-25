@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://iusscgq60rcy"]
+
+[ext_resource type="PackedScene" uid="uid://5mi2thhyfu2w" path="res://screens/welcome_menu/welcome_menu.tscn" id="1_47yqo"]
+
+[node name="WelcomeMenuUser" instance=ExtResource("1_47yqo")]
+
+[node name="WelcomeLabel" parent="." index="0"]
+offset_left = 556.0
+offset_top = 211.0
+offset_right = 1275.0
+offset_bottom = 301.0
+scale = Vector2(1, 1)
+theme_override_font_sizes/font_size = 65
+
+[node name="GotoPopUpBtns" parent="." index="2"]
+visible = false

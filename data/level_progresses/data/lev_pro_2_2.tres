@@ -10,5 +10,5 @@ script = ExtResource("1_tsfmy")
 state = 0
 unlock_conditions = Array[ExtResource("3_ywhxx")]([ExtResource("3_nxagt")])
 complete_condition = ExtResource("1_nxagt")
-id = ""
+id = "lv_w1_"
 metadata/_custom_type_script = "uid://d1yxoekvbmm38"

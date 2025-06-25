@@ -5,7 +5,9 @@ enum Types {ENEMY_KILLED, LEVEL_COMPLETED, NO_NULL_NAME}
 var type: Types
 
 signal fullfilled
-@export var is_fullfilled: bool = false : set = _set_is_fullfilled
+@export_storage var is_fullfilled: bool = false : set = _set_is_fullfilled
+
+@export var id: String
 
 func _set_is_fullfilled(new_value: bool) -> void:
 	is_fullfilled = new_value

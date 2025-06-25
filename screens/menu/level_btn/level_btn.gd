@@ -5,6 +5,7 @@ class_name LevelBtn extends Button
 var game: Game = load(GC.SCREENS_UIDS.GAME).instantiate()
 
 func _ready() -> void:
+	level._set_lv_pr(level.progress)
 	set_disabled_mode()
 
 func set_disabled_mode():

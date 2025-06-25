@@ -6,4 +6,5 @@
 script = ExtResource("1_pbafh")
 enemies_to_kill = 3
 is_fullfilled = false
+id = "cond_lv_enem_kill_3"
 metadata/_custom_type_script = "uid://cf1vm35ebsn87"

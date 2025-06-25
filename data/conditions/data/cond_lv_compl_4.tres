@@ -6,4 +6,5 @@
 script = ExtResource("1_62doe")
 level_path = "res://data/levels/data/lev_4.tres"
 is_fullfilled = false
+id = "cond_lv_compl_4"
 metadata/_custom_type_script = "uid://b2p4erl6k1qxw"

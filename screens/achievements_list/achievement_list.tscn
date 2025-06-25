@@ -15,10 +15,10 @@ script = ExtResource("1_g2dcv")
 [node name="CenterContainer" type="CenterContainer" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 205.0
-offset_top = 95.0
-offset_right = 932.0
-offset_bottom = 474.0
+offset_left = 596.0
+offset_top = 266.0
+offset_right = 1323.0
+offset_bottom = 645.0
 
 [node name="AchivementsContainer" type="VBoxContainer" parent="CenterContainer"]
 unique_name_in_owner = true
@@ -32,10 +32,11 @@ layout_mode = 2
 
 [node name="GoBackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 487.0
-offset_top = 495.0
-offset_right = 661.0
-offset_bottom = 581.0
+offset_left = 881.0
+offset_top = 846.0
+offset_right = 1055.0
+offset_bottom = 932.0
+theme_override_font_sizes/font_size = 55
 text = "go back"
 
 [connection signal="pressed" from="GoBackButton" to="." method="_on_go_back_button_pressed"]
